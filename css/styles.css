@@ -306,3 +306,32 @@ body {
   height: 100%;
   flex: 1;
 }
+.footerCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerCon .footerSubCon {
+  width: 1000px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footerCon .footerSubCon .footerColumn ul {
+  list-style: none;
+}
+.footerCon .footerSubCon .footerColumn ul li .socialLink {
+  text-decoration: underline;
+}
+.footerCon .footerSubCon .footerColumn ul li a {
+  text-decoration: none;
+}
+.footerCon .footerSubCon .footerColumn ul li a h3 {
+  color: black;
+  font-family: "Lato", sans-serif;
+}
+.footerCon .footerSubCon .footerColumn ul li a p {
+  color: black;
+  font-family: "Hind Siliguri", sans-serif;
+}

@@ -358,3 +358,35 @@ body {
     }
   }
 }
+
+.footerCon {
+  .column();
+  .alignItems(center);
+  .footerSubCon {
+    .width(1000px);
+    max-width: 1000px;
+    .row();
+    .justifyContent(space-between);
+    .footerColumn {
+      ul {
+        list-style: none;
+        li {
+          .socialLink {
+            text-decoration: underline;
+          }
+          a {
+            text-decoration: none;
+            h3 {
+              .color(black);
+              .lato();
+            }
+            p {
+              .color(black);
+              .hindSiliguri();
+            }
+          }
+        }
+      }
+    }
+  }
+}
