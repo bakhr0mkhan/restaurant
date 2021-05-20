@@ -11,13 +11,10 @@
 @min576: ~"(min-width: 576px)";
 @min1280: ~"(min-width: 1280px)";
 
-@media @min768 {
-  body {
-    font-size: @fontSize;
-  }
-}
-
 //Mixins
+
+//flexbox mixins
+
 .row {
   display: flex;
   flex-direction: row;
@@ -35,12 +32,37 @@
   .row();
   .centered();
 }
+.alignItems(@place) {
+  align-items: @place;
+}
+.justifyContent(@place) {
+  justify-content: @place;
+}
 
+//color mixins
 .orangeTextMixin {
   color: rgb(250, 168, 16);
 }
+.color(@color) {
+  color: @color;
+}
+.backgroundColor(@color) {
+  background-color: @color;
+}
 
 //font-mixins
+.fontFamily(@family, @backup) {
+  font-family: @family, @backup;
+}
+
+.fontSize(@size) {
+  font-size: @size;
+}
+
+.fontWeight(@weight) {
+  font-weight: @weight;
+}
+
 .lato {
   font-family: "Lato", sans-serif;
 }
@@ -49,19 +71,57 @@
   font-family: "Hind Siliguri", sans-serif;
 }
 
+//size-mixins
+.width(@width) {
+  width: @width;
+}
+.height(@height) {
+  height: @height;
+}
+.fWidth {
+  width: 100%;
+}
+.fHeight {
+  height: 100%;
+}
+.noMargin {
+  margin: 0;
+}
+.noPadding {
+  padding: 0;
+}
+.noMarginPadding {
+  .noMargin();
+  .noPadding();
+}
+
+.margin(@margin) {
+  margin: @margin;
+}
+.padding(@padding) {
+  padding: @padding;
+}
+
+//border mixins
+.border(@size, @type, @color) {
+  border: @size @type @color;
+}
+.borderRadius(@radius) {
+  border-radius: @radius;
+}
+
 //Styles
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
+  .noMarginPadding();
+  .width(100vw);
   height: 100vh;
 }
 .navbar {
   .row();
   justify-content: space-between;
   height: 4rem;
-  width: 100%;
+  .fWidth();
   .leftNav {
     margin: 0 5rem;
     display: inline;
@@ -93,8 +153,8 @@ body {
 }
 
 .content {
-  width: 100%;
-  height: 100%;
+  .fWidth();
+  .fHeight();
   align-self: center;
   .column();
   align-items: center;
@@ -113,10 +173,12 @@ body {
       }
       .subText {
         .hindSiliguri();
+        .fontSize(1.1rem);
       }
       .exploreBtn {
         padding: 1rem 2rem;
-        background-color: rgb(250, 168, 16);
+        // background-color: rgb(250, 168, 16);
+        .backgroundColor(rgb(250, 168, 16));
         color: white;
         .lato();
         border: 1px solid white;
@@ -126,8 +188,8 @@ body {
     }
     .contentRight {
       flex: 1;
-      height: 100%;
-      width: 100%;
+      .fHeight();
+      .fWidth();
     }
   }
 }
@@ -143,8 +205,8 @@ body {
 }
 
 .aboutCon {
-  width: 100%;
-  height: 100%;
+  .fWidth();
+  .fHeight();
   align-self: center;
   .column();
   align-items: center;
@@ -155,13 +217,13 @@ body {
     .rowAligned();
     .aboutSubLeft {
       flex: 2;
-      height: 100%;
+      .fHeight();
     }
     .aboutSubRight {
       padding: @padding;
 
       flex: 3;
-      height: 100%;
+      .fHeight();
       div {
         h2 {
           .lato();
@@ -169,6 +231,7 @@ body {
         }
         h4 {
           .hindSiliguri();
+          .fontSize(1.1rem);
         }
         button {
           .btn();
@@ -183,7 +246,7 @@ body {
 
 #services {
   margin-bottom: 10rem;
-  width: 100%;
+  .fWidth();
   height: 100vh;
   align-self: center;
   .column();
@@ -201,6 +264,7 @@ body {
       height: 20%;
       h2 {
         .lato();
+        .fontSize(3.5rem);
       }
       h4 {
         .orangeTextMixin();
@@ -214,7 +278,7 @@ body {
       justify-content: space-around;
       .service {
         margin: 0 1rem;
-        height: 100%;
+        .fHeight();
         .column();
         align-items: center;
         align-content: center;
@@ -230,10 +294,67 @@ body {
           }
           h6 {
             .hindSiliguri();
+            .fontSize(1.1rem);
             text-align: center;
           }
         }
       }
+    }
+  }
+}
+
+.testimonials {
+  .fWidth();
+  .height(100%);
+  .column();
+  .alignItems(center);
+  .testimonialsSub {
+    max-width: 1000px;
+    .width(1000px);
+    .row();
+    .alignItems(center);
+    .justifyContent(space-around);
+    .testimonialsLeft {
+      .padding(2rem);
+      flex: 2;
+      .fHeight();
+      div {
+        h3,
+        h4,
+        h5,
+        h6 {
+          .hindSiliguri();
+        }
+        h2 {
+          .fontSize(3.5rem);
+          .lato();
+        }
+        h3 {
+          .fontSize(2rem);
+          .orangeTextMixin();
+        }
+        h4 {
+          .fontSize(1.2rem);
+          line-height: 1rem;
+          .noPadding();
+          margin: 0.6rem 0;
+        }
+        h5 {
+          .fontSize(1.1rem);
+          line-height: 1rem;
+          .noMargin();
+          .noPadding();
+          .color(lightgray);
+        }
+        h6 {
+          .fontSize(1rem);
+          overflow-wrap: break-word;
+        }
+      }
+    }
+    .testimonialsRight {
+      .fHeight();
+      flex: 1;
     }
   }
 }

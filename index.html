@@ -140,10 +140,41 @@
             </div>
           </div>
           <!-- end of service -->
+        </div>
+      </div>
+    </div>
+
+    <!--testimonials  -->
+    <div class="testimonials" id="testimonials">
+      <div class="testimonialsSub">
+        <div class="testimonialsLeft">
+          <div>
+            <h3>Testimonial</h3>
+          </div>
+          <div>
+            <h2>This is what client says</h2>
+          </div>
+          <div class="descCon">
+            <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eius magni perferendis perspiciatis eligendi quia ea numquam tempora eos sunt, ipsum aliquid temporibus quam illo voluptate provident natus, sequi officia!</h6>
+          </div>
+          <div>
+            <h4>
+              John Doe
+            </h4>
+            <h5>Software engineer</h5>
+          </div>
+        </div>
+        <div class="testimonialsRight" id="testimonialsRight">
 
         </div>
       </div>
     </div>
+
+
+
+
+
+    <!--  -->
     <!-- this is end -->
 
     <!-- time for scripts -->
@@ -191,6 +222,15 @@ var chef = bodymovin.loadAnimation({
   // animationData: { /* ... */ },
   container: document.getElementById('serviceAnimCon2'), // required
   path: './animation/delivery.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+var chef = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('testimonialsRight'), // required
+  path: './animation/testimonial.json', // required
   renderer: 'svg', // required
   loop: true, // optional
   autoplay: true, // optional
