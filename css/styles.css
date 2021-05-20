@@ -112,3 +112,57 @@ body {
   height: 100%;
   width: 100%;
 }
+.btn {
+  padding: 1rem 2rem;
+  background-color: #faa810;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border: 1px solid white;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+}
+.aboutCon {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutCon .aboutSub {
+  max-width: 1000px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.aboutCon .aboutSub .aboutSubLeft {
+  flex: 2;
+  height: 100%;
+}
+.aboutCon .aboutSub .aboutSubRight {
+  padding: 1rem;
+  flex: 3;
+  height: 100%;
+}
+.aboutCon .aboutSub .aboutSubRight div h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5rem;
+}
+.aboutCon .aboutSub .aboutSubRight div h4 {
+  font-family: "Hind Siliguri", sans-serif;
+}
+.aboutCon .aboutSub .aboutSubRight div button {
+  padding: 1rem 2rem;
+  background-color: #faa810;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border: 1px solid white;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+}
+.aboutCon .aboutSub .orangeText {
+  color: #faa810;
+}

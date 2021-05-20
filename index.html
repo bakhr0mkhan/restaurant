@@ -85,12 +85,12 @@
     <!-- about section -->
     <div class="aboutCon" id="about">
         <div class="aboutSub">
-            <div class="aboutSubLeft">
+            <div class="aboutSubLeft" id="aboutSubLeft">
 
             </div>
             <div class="aboutSubRight">
                 <div>
-                    <h4>About us</h4>
+                    <h4 class="orangeText">About us</h4>
                 </div>
                 <div>
                     <h2>Simple way of eating delicous</h2>
@@ -124,9 +124,8 @@
   autoplay: true, // optional
   name: "Demo Animation", // optional
 });
-</script>
-    <script>
-  var animation = bodymovin.loadAnimation({
+
+var chef = bodymovin.loadAnimation({
   // animationData: { /* ... */ },
   container: document.getElementById('aboutSubLeft'), // required
   path: './animation/chef.json', // required
@@ -136,5 +135,6 @@
   name: "Demo Animation", // optional
 });
 </script>
+
   </body>
 </html>

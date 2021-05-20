@@ -118,3 +118,52 @@ body {
     }
   }
 }
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: rgb(250, 168, 16);
+  color: white;
+  font-family: "Lato", sans-serif;
+  border: 1px solid white;
+  font-size: @fontSize;
+  border-radius: 2rem;
+}
+
+.aboutCon {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  .column();
+  align-items: center;
+  justify-content: center;
+  .aboutSub {
+    max-width: 1000px;
+    width: 1000px;
+    .rowAligned();
+    .aboutSubLeft {
+      flex: 2;
+      height: 100%;
+    }
+    .aboutSubRight {
+      padding: @padding;
+
+      flex: 3;
+      height: 100%;
+      div {
+        h2 {
+          font-family: "Lato", sans-serif;
+          font-size: 3.5rem;
+        }
+        h4 {
+          font-family: "Hind Siliguri", sans-serif;
+        }
+        button {
+          .btn();
+        }
+      }
+    }
+    .orangeText {
+      color: rgb(250, 168, 16);
+    }
+  }
+}
