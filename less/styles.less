@@ -1,0 +1,79 @@
+@primaryColor: red;
+@secondaryColor: blue;
+@fontSize: 1.6rem;
+@smallFont: 1.1rem;
+@padding: 1rem;
+@margin: 1rem;
+@bgColor: pink;
+
+//Media variables
+@min768: ~"(min-width: 768px)";
+@min576: ~"(min-width: 576px)";
+@min1280: ~"(min-width: 1280px)";
+
+@media @min768 {
+  body {
+    font-size: @fontSize;
+  }
+}
+
+//Mixins
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.rowAligned {
+  .row();
+  .centered();
+}
+
+//Styles
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  .row();
+  justify-content: space-between;
+  border: 1px solid pink;
+  height: 4rem;
+  width: 100%;
+  .leftNav {
+    margin: 0 1rem;
+    display: inline;
+    .rowAligned();
+    .brandName {
+      font-family: "Pattaya", sans-serif;
+    }
+  }
+  .rightNav {
+    .rowAligned();
+    margin: 0 1rem;
+    .linksList {
+      .row();
+      list-style: none;
+      .linkItem {
+        margin: @margin;
+        .link {
+          text-decoration: none;
+          .textLink {
+            font-size: @fontSize;
+            color: black;
+            font-weight: 800;
+            font-family: "Catamaran", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
