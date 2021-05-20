@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="leftNav">
+        <div>
+          <img
+            src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png"
+            class="iconImg"
+          />
+        </div>
+        <div>
+          <h3 class="brandName">PizzaHome</h3>
+        </div>
+      </div>
+      <div class="rightNav">
+        <ul class="linksList">
+          <li class="linkItem">
+            <a href="#" class="link">
+              <p class="textLink">About</p>
+            </a>
+          </li>
+          <li class="linkItem">
+            <a href="#" class="link">
+              <p class="textLink">Contact</p>
+            </a>
+          </li>
+          <li class="linkItem">
+            <a href="#" class="link">
+              <p class="textLink">Products</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- time for a content  -->
+    <div class="content">
+      <div class="contentSub">
+        <div class="contentLeft">
+          <div>
+            <h1 class="header">Good F&#128523&#128523d</h1>
+            <h1 class="header">Good M&#128513&#128513d</h1>
+          </div>
+          <div>
+            <h5 class="subText">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+
+            </h5>
+          </div>
+          <div>
+            <button class="btn exploreBtn">Explore</button>
+          </div>
+        </div>
+        <div class="contentRight" id="animContainer"></div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="aboutCon" id="about">
+        <div class="aboutSub">
+            <div class="aboutSubLeft">
+
+            </div>
+            <div class="aboutSubRight">
+                <div>
+                    <h4>About us</h4>
+                </div>
+                <div>
+                    <h2>Simple way of eating delicous</h2>
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam assumenda in repudiandae doloremque at natus cupiditate saepe esse ad repellendus repellat velit quidem, corrupti libero laborum soluta nam dolores.</h4>
+                </div>
+                <div>
+                    <button class="btn">
+                        Explore our story
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- this is end -->
+
+    <!-- time for scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js">
+    </script>
+    <script>
+  var animation = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('animContainer'), // required
+  path: './animation/food.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+</script>
+    <script>
+  var animation = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('aboutSubLeft'), // required
+  path: './animation/chef.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+.rowAligned {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+}
+.navbar .leftNav {
+  margin: 0 5rem;
+  display: inline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .leftNav .brandName {
+  font-family: "Pattaya", sans-serif;
+}
+.navbar .rightNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.navbar .rightNav .linksList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.navbar .rightNav .linksList .linkItem {
+  margin: 1rem;
+}
+.navbar .rightNav .linksList .linkItem .link {
+  text-decoration: none;
+}
+.navbar .rightNav .linksList .linkItem .link .textLink {
+  font-size: 1.6rem;
+  color: black;
+  font-weight: 800;
+  font-family: "Catamaran", sans-serif;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .contentSub {
+  margin-top: -2rem;
+  max-width: 1000px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.content .contentSub .contentLeft {
+  flex: 3;
+}
+.content .contentSub .contentLeft .header {
+  font-family: "Lato", sans-serif;
+  font-size: 5rem;
+}
+.content .contentSub .contentLeft .subText {
+  font-family: "Hind Siliguri", sans-serif;
+}
+.content .contentSub .contentLeft .exploreBtn {
+  padding: 1rem 2rem;
+  background-color: #faa810;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border: 1px solid white;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+}
+.content .contentSub .contentRight {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
