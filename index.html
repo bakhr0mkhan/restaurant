@@ -108,7 +108,42 @@
         </div>
 
     </div>
+    <!-- tiime for services -->
+    <div class="services" id="services">
+      <div class="servicesSub">
+        <div class="servicesTop">
+          <h4 class="textSub">Features</h4>
+          <h2 class="servicesHeader">Our awesome services</h2>
+        </div>
+        <div class="servicesBottom">
+          <div class="service">
+            <div id='serviceAnimCon0' class="serviceTop"></div>
+            <div class="serviceBottom">
+              <h3>Quality Food</h3>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h6>
+            </div>
+          </div>
+          <!-- end of service -->
+          <div class="service">
+            <div id='serviceAnimCon1' class="serviceTop"></div>
+            <div class="serviceBottom">
+              <h3>Super Taste</h3>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h6>
+            </div>
+          </div>
+          <!-- end of service -->
+          <div class="service">
+            <div id='serviceAnimCon2' class="serviceTop"></div>
+            <div class="serviceBottom">
+              <h3>Fast Delivery</h3>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h6>
+            </div>
+          </div>
+          <!-- end of service -->
 
+        </div>
+      </div>
+    </div>
     <!-- this is end -->
 
     <!-- time for scripts -->
@@ -129,6 +164,33 @@ var chef = bodymovin.loadAnimation({
   // animationData: { /* ... */ },
   container: document.getElementById('aboutSubLeft'), // required
   path: './animation/chef.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+var chef = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('serviceAnimCon0'), // required
+  path: './animation/foodCarousel.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+var chef = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('serviceAnimCon1'), // required
+  path: './animation/tasty.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+var chef = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('serviceAnimCon2'), // required
+  path: './animation/delivery.json', // required
   renderer: 'svg', // required
   loop: true, // optional
   autoplay: true, // optional
