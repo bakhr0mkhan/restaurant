@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.navbar .navbarSub {
+.navbarSub {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,35 +61,35 @@ body {
   width: 1000px;
   max-width: 1000px;
 }
-.navbar .navbarSub .leftNav {
+.leftNav {
   display: inline;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.navbar .navbarSub .leftNav .brandName {
+.brandName {
   font-family: "Pattaya", sans-serif;
   font-size: 1.6rem;
 }
-.navbar .navbarSub .rightNav {
+.rightNav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.navbar .navbarSub .rightNav .linksList {
+.linksList {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-.navbar .navbarSub .rightNav .linksList .linkItem {
+.linkItem {
   margin: 1rem;
 }
-.navbar .navbarSub .rightNav .linksList .linkItem .link {
+.link {
   text-decoration: none;
 }
-.navbar .navbarSub .rightNav .linksList .linkItem .link .textLink {
+.textLink {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   color: black;
@@ -103,7 +103,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.content .contentSub {
+.contentSub {
   margin-top: -2rem;
   max-width: 1000px;
   width: 1000px;
@@ -112,18 +112,18 @@ body {
   align-items: center;
   justify-content: center;
 }
-.content .contentSub .contentLeft {
+.contentLeft {
   flex: 3;
 }
-.content .contentSub .contentLeft .header {
+.header {
   font-family: "Lato", sans-serif;
   font-size: 5rem;
 }
-.content .contentSub .contentLeft .subText {
+.subText {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.1rem;
 }
-.content .contentSub .contentLeft .exploreBtn {
+.exploreBtn {
   text-decoration: none;
   padding: 1rem 2rem;
   background-color: #faa810;
@@ -133,7 +133,7 @@ body {
   font-size: 1.6rem;
   border-radius: 2rem;
 }
-.content .contentSub .contentRight {
+.contentRight {
   flex: 1;
   height: 100%;
   width: 100%;
@@ -156,7 +156,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.aboutCon .aboutSub {
+.aboutSub {
   max-width: 1000px;
   width: 1000px;
   display: flex;
@@ -164,24 +164,24 @@ body {
   align-items: center;
   justify-content: center;
 }
-.aboutCon .aboutSub .aboutSubLeft {
+.aboutSubLeft {
   flex: 2;
   height: 100%;
 }
-.aboutCon .aboutSub .aboutSubRight {
+.aboutSubRight {
   padding: 1rem;
   flex: 3;
   height: 100%;
 }
-.aboutCon .aboutSub .aboutSubRight div h2 {
+.aboutSubRight div h2 {
   font-family: "Lato", sans-serif;
   font-size: 3.5rem;
 }
-.aboutCon .aboutSub .aboutSubRight div h4 {
+.aboutSubRight div h4 {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.6rem;
 }
-.aboutCon .aboutSub .aboutSubRight div a {
+.aboutSubRight div a {
   padding: 1rem 2rem;
   background-color: #faa810;
   color: white;
@@ -191,7 +191,7 @@ body {
   border-radius: 2rem;
   text-decoration: none;
 }
-.aboutCon .aboutSub .orangeText {
+.orangeText {
   color: #faa810;
 }
 #services {
@@ -204,37 +204,37 @@ body {
   align-items: center;
   justify-content: center;
 }
-#services .servicesSub {
+.servicesSub {
   max-width: 1000px;
   width: 1000px;
   height: 70vh;
   display: flex;
   flex-direction: column;
 }
-#services .servicesSub .servicesTop {
+.servicesTop {
   text-align: center;
   line-height: 4px;
   padding: 0;
   margin: 0;
   height: 20%;
 }
-#services .servicesSub .servicesTop h2 {
+.servicesTop h2 {
   font-family: "Lato", sans-serif;
   font-size: 3.5rem;
 }
-#services .servicesSub .servicesTop h4 {
+.servicesTop h4 {
   color: #faa810;
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.6rem;
 }
-#services .servicesSub .servicesBottom {
+.servicesBottom {
   height: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-#services .servicesSub .servicesBottom .service {
+.service {
   margin: 0 1rem;
   height: 100%;
   display: flex;
@@ -242,18 +242,18 @@ body {
   align-items: center;
   align-content: center;
 }
-#services .servicesSub .servicesBottom .service .serviceTop {
+.serviceTop {
   height: 50%;
 }
-#services .servicesSub .servicesBottom .service .serviceBottom {
+.serviceBottom {
   height: 50%;
   text-align: center;
 }
-#services .servicesSub .servicesBottom .service .serviceBottom h3 {
+.serviceBottom h3 {
   font-family: "Lato", sans-serif;
   text-align: center;
 }
-#services .servicesSub .servicesBottom .service .serviceBottom h6 {
+.serviceBottom h6 {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.1rem;
   text-align: center;
@@ -266,7 +266,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.testimonials .testimonialsSub {
+.testimonialsSub {
   max-width: 1000px;
   width: 1000px;
   display: flex;
@@ -274,49 +274,43 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.testimonials .testimonialsSub .testimonialsLeft {
+.testimonialsLeft {
   padding: 2rem;
   flex: 2;
   height: 100%;
 }
-.testimonials .testimonialsSub .testimonialsLeft .contactContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.testimonials .testimonialsSub .testimonialsLeft div h3,
-.testimonials .testimonialsSub .testimonialsLeft div h4,
-.testimonials .testimonialsSub .testimonialsLeft div h5,
-.testimonials .testimonialsSub .testimonialsLeft div h6 {
+.testimonialsLeft div h3,
+.testimonialsLeft div h4,
+.testimonialsLeft div h5,
+.testimonialsLeft div h6 {
   font-family: "Hind Siliguri", sans-serif;
 }
-.testimonials .testimonialsSub .testimonialsLeft div h2 {
+.testimonialsLeft div h2 {
   font-size: 3.5rem;
   font-family: "Lato", sans-serif;
 }
-.testimonials .testimonialsSub .testimonialsLeft div h3 {
+.testimonialsLeft div h3 {
   font-size: 2rem;
   color: #faa810;
 }
-.testimonials .testimonialsSub .testimonialsLeft div h4 {
+.testimonialsLeft div h4 {
   font-size: 1.2rem;
   line-height: 1rem;
   padding: 0;
   margin: 0.6rem 0;
 }
-.testimonials .testimonialsSub .testimonialsLeft div h5 {
+.testimonialsLeft div h5 {
   font-size: 1.1rem;
   line-height: 1rem;
   margin: 0;
   padding: 0;
   color: lightgray;
 }
-.testimonials .testimonialsSub .testimonialsLeft div h6 {
+.testimonialsLeft div h6 {
   font-size: 1rem;
   overflow-wrap: break-word;
 }
-.testimonials .testimonialsSub .testimonialsLeft div a {
+.testimonialsLeft div a {
   margin-top: 2rem;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -327,7 +321,13 @@ body {
   font-size: 1.6rem;
   border-radius: 2rem;
 }
-.testimonials .testimonialsSub .testimonialsRight {
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonialsRight {
   height: 100%;
   flex: 1;
 }
@@ -336,27 +336,122 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.footerCon .footerSubCon {
+.footerSubCon {
   width: 1000px;
   max-width: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footerCon .footerSubCon .footerColumn ul {
+.footerColumn ul {
   list-style: none;
 }
-.footerCon .footerSubCon .footerColumn ul li .socialLink {
-  text-decoration: underline;
-}
-.footerCon .footerSubCon .footerColumn ul li a {
+.footerColumn ul li a {
   text-decoration: none;
 }
-.footerCon .footerSubCon .footerColumn ul li a h3 {
+.footerColumn ul li a h3 {
   color: black;
   font-family: "Lato", sans-serif;
 }
-.footerCon .footerSubCon .footerColumn ul li a p {
+.footerColumn ul li a p {
   color: black;
   font-family: "Hind Siliguri", sans-serif;
+}
+.socialLink {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .navbar {
+    display: none;
+  }
+  .content {
+    margin-bottom: 2rem;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .contentSub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contentLeft {
+    padding: 0 1rem;
+  }
+  #animContainer {
+    margin: 5rem 0;
+    width: 50%;
+    height: 50%;
+  }
+  .aboutCon {
+    margin: 8rem 0;
+    width: 100%;
+  }
+  .aboutSub {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutSubRight div h2 {
+    font-size: 3rem;
+  }
+  .aboutSubRight div h4 {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  .services {
+    margin: 5rem 0;
+    width: 100%;
+  }
+  .servicesSub {
+    width: 100%;
+  }
+  .servicesTop {
+    height: 15rem;
+    overflow-wrap: break-word;
+  }
+  .servicesHeader {
+    font-size: 14px;
+    color: pink;
+    overflow-wrap: break-word;
+    display: none;
+  }
+  .servicesBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0;
+    height: 60rem;
+  }
+  .testimonials {
+    margin-top: 45rem;
+    margin-bottom: 10rem;
+    width: 100%;
+  }
+  .testimonialsSub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerCon {
+    width: 100%;
+  }
+  .footerSubCon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerColumn {
+    text-align: center;
+  }
 }
